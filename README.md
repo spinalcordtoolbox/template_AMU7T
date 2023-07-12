@@ -1,4 +1,4 @@
-# AMU7T: 3D qT1 and T2*s in vivo template + atlas
+# AMU7T: 3D qT1 and T2*w in vivo template + atlas
 ![AMU_7T_template](https://github.com/spinalcordtoolbox/template_AMU7T/assets/77469192/3b5cb4b8-5931-4841-b952-d968f4b4338f)
 
 ## Data
