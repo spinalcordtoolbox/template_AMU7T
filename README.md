@@ -82,7 +82,10 @@ Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 
 The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed here, and the parcellation can be visualized with this Lookup table in [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt) and [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
 
-
+## Related issues
+[#13](https://github.com/spinalcordtoolbox/PAM50/issues/13) 
+[#4147](https://github.com/spinalcordtoolbox/spinalcordtoolbox/issues/4147)
+[#PR14](https://github.com/spinalcordtoolbox/PAM50/pull/14)
 
 ## How to cite
 Le Troter, A., Laines Medina, N., Mchinda, S., Cohen-Adad, J., & Callot, V. (June 2023). [AMU7T : a 3D qT1 and T2*w high-resolution in vivo template with refined white and gray matter parcellation dedicated to 7T spinal cord MR analyses](https://github.com/spinalcordtoolbox/template_AMU7T/files/12031127/AMU7T.a.3D.qT1.and.T2s.w.high-resolution.in.vivo.template.with.refined.white.and.gray.matter.parcellation.dedicated.to.7T.spinal.cord.MR.analyses.pdf) [Oral presentation]. ISMRM & ISMRT annual Meeting & Exhibition, Toronto, ON, Canada.
