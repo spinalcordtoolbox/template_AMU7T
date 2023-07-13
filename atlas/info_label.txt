@@ -1,4 +1,4 @@
-# White matter atlas. Generated on: 01-Sep-2016
+# White matter and gray matter atlas
 #
 # Keyword=IndivLabels (Please DO NOT change this line)
 # ID  Name File Label
