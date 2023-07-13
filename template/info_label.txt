@@ -2,8 +2,8 @@
 # Keyword=IndivLabels (Please DO NOT change this line)
 # ID (compatible with PAM50 ID), name, file
 0, 7T qT1 template (26 subjects), AMU26_qt1.nii.gz
-1, 7T T2Star-weighted template (72 subjects), AMU72_t2s.nii.gz
 
+2, 7T T2Star-weighted template (72 subjects), AMU72_t2s.nii.gz
 3, spinal cord mask (probabilistic), AMU7T_sc.nii.gz
 4, white matter mask (probabilistic), AMU7T_wm.nii.gz
 5, gray matter mask (probabilistic), AMU7T_gm.nii.gz
