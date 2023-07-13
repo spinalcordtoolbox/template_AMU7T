@@ -1,0 +1,65 @@
+################################################
+# ITK-SnAP Label Description File
+# File format: 
+# IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
+# Fields: 
+#    IDX:   Zero-based index 
+#    -R-:   Red color component (0..255)
+#    -G-:   Green color component (0..255)
+#    -B-:   Blue color component (0..255)
+#    -A-:   Label transparency (0.00 .. 1.00)
+#    VIS:   Label visibility (0 or 1)
+#    IDX:   Label mesh visibility (0 or 1)
+#  LABEL:   Label description 
+################################################
+    0     0    0    0        0  0  0    "Clear Label"
+    1   204  102  254        1  1  1    "WM-right-fasciculus-gracilis"
+    2   145  252    0        1  1  1    "WM-left-fasciculus-cuneatus"
+    3   145  252    0        1  1  1    "WM-right-fasciculus-cuneatus"
+    4   255    0  165        1  1  1    "WM-right-lateral-corticospinal-tract"
+    5   255    0  165        1  1  1    "WM-right-lateral-corticospinal-tract"
+    6   113   65   28        1  1  1    "WM-left-ventral-spinocerebellar-tract"
+    7   113   65   28        1  1  1    "WM-right-ventral-spinocerebellar-tract"
+    8    83    0    0        1  1  1    "WM-left-rubrospinal-tract"
+    9    83    0    0        1  1  1    "WM-right-rubrospinal-tract"
+   10     0  142    0        1  1  1    "WM-left-lateral-reticulospinal-tract"
+   11     0  142    0        1  1  1    "WM-right-lateral-reticulospinal-tract"
+   12   255    0   37        1  1  1    "WM-left-spinal-lemniscus-(spinothalamic-and-spinoreticular-tracts)"
+   13   255    0   37        1  1  1    "WM-right-spinal-lemniscus-(spinothalamic-and-spinoreticular-tracts)"
+   14   128  128    0        1  1  1    "WM-left-spino-olivary-tract"
+   15   128  128    0        1  1  1    "WM-right-spino-olivary-tract"
+   16     0  128  128        1  1  1    "WM-left-ventrolateral-reticulospinal-tract"
+   17     0  128  128        1  1  1    "WM-right-ventrolateral-reticulospinal-tract"
+   18   128    0  128        1  1  1    "WM-left-lateral-vestibulospinal-tract"
+   19   128    0  128        1  1  1    "WM-right-lateral-vestibulospinal-tract"
+   20   255  128    0        1  1  1    "WM-left-ventral-reticulospinal-tract"
+   21   255  128    0        1  1  1    "WM-right-ventral-reticulospinal-tract"
+   22   253  204  101        1  1  1    "WM-left-ventral-corticospinal-tract"
+   23   253  204  101        1  1  1    "WM-right-ventral-corticospinal-tract"
+   24     0    0  127        1  1  1    "WM-left-tectospinal-tract"
+   25     0    0  127        1  1  1    "WM-right-tectospinal-tract"
+   26   230  200  229        1  1  1    "WM-left-medial-reticulospinal-tract"
+   27   230  200  229        1  1  1    "WM-right-medial-reticulospinal-tract"
+   28   178  230  229        1  1  1    "WM-left-medial-longitudinal-fasciculus"
+   29   178  230  229        1  1  1    "WM-right-medial-longitudinal-fasciculus"
+   32   255   64  254        1  1  1    "GM-left-dorsal-intermediate-zone"
+   33   255   64  254        1  1  1    "GM-right-dorsal-intermediate-zone"
+   34     0    0  244        1  1  1    "GM-left-reticular-formation"
+   35     0    0  244        1  1  1    "GM-right-reticular-formation"
+   39   204  102  254        1  1  1    "WM-left-fasciculus-gracilis"
+   40   212  251  121        1  1  1    "GM-right-lateral-ventral-horn"
+   41     0  143   81        1  1  1    "GM-right-medial-ventral-horn"
+   42     2  248    0        1  1  1    "GM-right-central-ventral-horn"
+   43     0  143   81        1  1  1    "GM-left-medial-ventral-horn"
+   44   212  251  121        1  1  1    "GM-left-lateral-ventral-horn"
+   45     2  248    0        1  1  1    "GM-left-central-ventral-horn"
+   46    16  128  254        1  1  1    "GM-left-dorsomarginal-nucleus"
+   47    16  128  254        1  1  1    "GM-right-dorsomarginal-nucleus"
+   51   148   55  255        1  1  1    "GM-right-ventral-intermediate-zone"
+   52    32  254  254        1  1  1    "GM-right-fasciculus-dorsolateralis"
+   53   148   55  255        1  1  1    "GM-left-ventral-intermediate-zone"
+   54    32  254  254        1  1  1    "GM-left-fasciculus-dorsolateralis"
+   72   255  255  255        1  1  1    "CSF contour"
+   74   255  147    0        1  1  1    "central-zone"
+   76   255   38    0        1  1  1    "anterior-fissure"
+  100   255  255   10        1  1  1    "septum"
