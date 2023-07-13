@@ -1,7 +1,7 @@
 # White matter and gray matter atlas
 #
 # Keyword=IndivLabels (Please DO NOT change this line)
-# ID  Name File Label
+# ID (compatible with PAM50 ID), name, file
 0, WM	Left	fasciculus-gracilis, AMU7T_label_00_bin.nii.gz
 1, WM	Right	fasciculus-gracilis, AMU7T_label_01_bin.nii.gz
 2, WM	Left	fasciculus-cuneatus, AMU7T_label_02_bin.nii.gz
