@@ -51,9 +51,9 @@ Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 - 311	- GM	Right	medial-ventral-horn
 - 312	- GM	Right	central-ventral-horn
 - 313	- GM	Right	lateral-ventral-horn
-- 321	- GM	Left	intermediate-zone
+- 321	- GM	Left	dorsal_intermediate-zone
 - 322	- GM	Left	ventral-intermediate-zone
-- 331	- GM	Right	intermediate-zone
+- 331	- GM	Right	dorsal-intermediate-zone
 - 332	- GM	Right	ventral-intermediate-zone
 - 341 -	GM	Left	reticular-formation
 - 342	- GM	Left	dorsomarginal-nucleus
