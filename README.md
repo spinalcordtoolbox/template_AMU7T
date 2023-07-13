@@ -84,7 +84,7 @@ The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [he
 
 ## Related issues
 [#13](https://github.com/spinalcordtoolbox/PAM50/issues/13) 
-[#4147](https://github.com/spinalcordtoolbox/spinalcordtoolbox/issues/4147)
+[#4](https://github.com/spinalcordtoolbox/template_AMU7T/issues/4)
 [#PR14](https://github.com/spinalcordtoolbox/PAM50/pull/14)
 
 ## How to cite
