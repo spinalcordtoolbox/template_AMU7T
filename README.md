@@ -1,4 +1,5 @@
 # AMU7T: 3D qT1 and T2*w in vivo template + atlas
+AMU7T : high-resolution multimodal quantitative T1 and T2*-weighted templates with white and gray matter spinal cord and substructures atlas, aligned with the PAM50 space
 ![AMU_7T_template](https://github.com/spinalcordtoolbox/template_AMU7T/assets/77469192/3b5cb4b8-5931-4841-b952-d968f4b4338f)
 
 ## Data
@@ -8,7 +9,7 @@ This data repository contains:
 - `template/AMU7T_gm.nii.gz`: Probabilistic gray matter mask.
 - `template/AMU7T_wm.nii.gz`: Probabilistic white matter mask.
 - `template/AMU7T_sc.nii.gz`: Probabilistic spinal cord mask.
-- `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Levi et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/)., and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962).__
+- `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Lévy et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/)., and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962).__
 - `atlas/AMU7T_label_ID_bin.nii.gz`: Binary masks by ID.
 
 ### Labels
@@ -62,7 +63,7 @@ Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 - 352	- GM	Right	dorsomarginal-nucleus
 - 353	- GM	Right	fasciculus-dorsolateralis
 - 36  - CSF	contour
-- 37	- Central-zone
+- 37	- Central-canal
 - 38	- Anterior-fissure
 - 39	- Septum
 
@@ -88,4 +89,4 @@ The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [he
 [#PR14](https://github.com/spinalcordtoolbox/PAM50/pull/14)
 
 ## How to cite
-Le Troter, A., Laines Medina, N., Mchinda, S., Cohen-Adad, J., & Callot, V. (June 2023). [AMU7T : a 3D qT1 and T2*w high-resolution in vivo template with refined white and gray matter parcellation dedicated to 7T spinal cord MR analyses](https://github.com/spinalcordtoolbox/template_AMU7T/files/12031127/AMU7T.a.3D.qT1.and.T2s.w.high-resolution.in.vivo.template.with.refined.white.and.gray.matter.parcellation.dedicated.to.7T.spinal.cord.MR.analyses.pdf) [Oral presentation]. ISMRM & ISMRT annual Meeting & Exhibition, Toronto, ON, Canada.
+Le Troter, A., Laines Medina, N., Mchinda, S., Cohen-Adad, J., & Callot, V. (June 2023). [AMU7T : a 3D qT1 and T2*w high-resolution in vivo template with refined white and gray matter parcellation dedicated to 7T spinal cord MR analyses](https://github.com/spinalcordtoolbox/template_AMU7T/files/12031127/AMU7T.a.3D.qT1.and.T2s.w.high-resolution.in.vivo.template.with.refined.white.and.gray.matter.parcellation.dedicated.to.7T.spinal.cord.MR.analyses.pdf) [Oral presentation - p. 0569]. ISMRM & ISMRT annual Meeting & Exhibition, Toronto, ON, Canada.
