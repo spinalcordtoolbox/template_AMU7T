@@ -12,74 +12,73 @@ This data repository contains:
 - `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Lévy et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/)., and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962).__
 - `atlas/AMU7T_label_ID_bin.nii.gz`: Binary masks by ID.
 
-### Labels
-Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
+### Labels:  Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 
-**ID    Region						                File			            Label in atlas/AMU7T_50_labels.nii.gz**
-- 0	    WM_Left_fasciculus-gracilis		            AMU7T_label_00_bin.nii.gz	    39
-- 1	    WM_Right_fasciculus-gracilis	         	AMU7T_label_01_bin.nii.gz	    1
-- 2	    WM_Left_fasciculus-cuneatus			        AMU7T_label_02_bin.nii.gz	    2
-- 3	    WM_Right_fasciculus-cuneatus	 	    	AMU7T_label_03_bin.nii.gz	    3
-- 4	    WM_Left_lateral-corticospinal	 	        AMU7T_label_04_bin.nii.gz	    4   
-- 5	    WM_Right_lateral-corticospinal	 	    	AMU7T_label_05_bin.nii.gz	    5
-- 6	    WM_Left_ventral-spinocerebellar	 	        AMU7T_label_06_bin.nii.gz	    6
-- 7	    WM_Right_ventral-spinocerebellar	        AMU7T_label_07_bin.nii.gz	    7
-- 8	    WM_Left_rubrospinal	 			            AMU7T_label_08_bin.nii.gz	    8
-- 9	    WM_Right_rubrospinal	 		            AMU7T_label_09_bin.nii.gz	    9
-- 10	WM_Left_lateral-reticulospinal	 	        AMU7T_label_10_bin.nii.gz	    10
-- 11	WM_Right_lateral-reticulospinal	 	        AMU7T_label_11_bin.nii.gz	    11
-- 12	WM_Left_spinal-lemniscus-spinothalamic	 	AMU7T_label_12_bin.nii.gz	    12
-- 13	WM_Right_spinal-lemniscus-spinothalamic	    AMU7T_label_13_bin.nii.gz	    13
-- 14	WM_Left_spino-olivary	 	            	AMU7T_label_14_bin.nii.gz	    14
-- 15	WM_Right_spino-olivary	            		AMU7T_label_15_bin.nii.gz	    15
-- 16	WM_Left_ventrolateral-reticulospinal    	AMU7T_label_16_bin.nii.gz	    16
-- 17	WM_Right_ventrolateral-reticulospinal	    AMU7T_label_17_bin.nii.gz	    17
-- 18	WM_Left_lateral-vestibulospinal	     	    AMU7T_label_18_bin.nii.gz	    18
-- 19	WM_Right_lateral-vestibulospinal	     	AMU7T_label_19_bin.nii.gz	    19
-- 20	WM_Left_ventral-reticulospinal	 		    AMU7T_label_20_bin.nii.gz	    20
-- 21	WM_Right_ventral-reticulospinal	 	        AMU7T_label_21_bin.nii.gz	    21  
-- 22	WM_Left_ventral-corticospinal	 		    AMU7T_label_22_bin.nii.gz	    22
-- 23	WM_Right_ventral-corticospinal	 		    AMU7T_label_23_bin.nii.gz	    23
-- 24	WM_Left_tectospinal	 			            AMU7T_label_24_bin.nii.gz	    24
-- 25	WM_Right_tectospinal	 			        AMU7T_label_25_bin.nii.gz	    25
-- 26	WM_Left_medial-reticulospinal	 	    	AMU7T_label_26_bin.nii.gz	    26
-- 27	WM_Right_medial-reticulospinal	 	    	AMU7T_label_27_bin.nii.gz	    27
-- 28	WM_Left_medial-longitudinal-fasciculus	 	AMU7T_label_28_bin.nii.gz	    28
-- 29	WM_Right_medial-longitudinal-fasciculus     AMU7T_label_29_bin.nii.gz	    29
-- 30	anterior-fissure	 			            AMU7T_label_30_bin.nii.gz	    76
-- 31	septum	 					                AMU7T_label_31_bin.nii.gz	    100
-- 32	GM_Left_medial-ventral-horn	 		        AMU7T_label_32_bin.nii.gz	    43
-- 33	GM_Left_central-ventral-horn    		    AMU7T_label_33_bin.nii.gz	    45
-- 34	GM_Left_lateral-ventral-horn	     		AMU7T_label_34_bin.nii.gz	    44
-- 35	GM_Right_medial-ventral-horn	 	    	AMU7T_label_35_bin.nii.gz	    41
-- 36	GM_Right_central-ventral-horn	 		    AMU7T_label_36_bin.nii.gz	    42
-- 37	GM_Right_lateral-ventral-horn	     		AMU7T_label_37_bin.nii.gz	    40
-- 38	GM_Left_dorsal-intermediate-zone	     	AMU7T_label_38_bin.nii.gz	    32
-- 39	GM_Left_ventral-intermediate-zone	 	    AMU7T_label_39_bin.nii.gz	    53
-- 40	GM_Right_dorsal-intermediate-zone	    	AMU7T_label_40_bin.nii.gz	    33
-- 41	GM_Right_ventral-intermediate-zone	    	AMU7T_label_41_bin.nii.gz	    51
-- 42	GM_Left_reticular-formation	 		        AMU7T_label_42_bin.nii.gz	    34
-- 43	GM_Left_dorsomarginal-nucleus	 	    	AMU7T_label_43_bin.nii.gz	    46
-- 44	GM_Left_fasciculus-dorsolateralis	 	    AMU7T_label_44_bin.nii.gz	    54
-- 45	GM_Right_reticular-formation	 		    AMU7T_label_45_bin.nii.gz	    35
-- 46	GM_Right_dorsomarginal-nucleus	    		AMU7T_label_46_bin.nii.gz	    47
-- 47	GM_Right_fasciculus-dorsolateralis	     	AMU7T_label_47_bin.nii.gz	    52
-- 48	central-canal	     			    	    AMU7T_label_48_bin.nii.gz	    74
-- 49	CSF-contour	 		            	    	AMU7T_label_49_bin.nii.gz	    72
+**ID  -  Region						**
+- 0	  -  WM Left_fasciculus-gracilis		 
+- 1	  -  WM Right_fasciculus-gracilis	   
+- 2	  -  WM Left_fasciculus-cuneatus		
+- 3	  -  WM Right_fasciculus-cuneatus	 	
+- 4	  -  WM Left_lateral-corticospinal	
+- 5	  -  WM Right_lateral-corticospinal	
+- 6	  -  WM Left_ventral-spinocerebellar	
+- 7	  -  WM Right_ventral-spinocerebellar
+- 8	  -  WM Left_rubrospinal	 			      
+- 9	  -  WM Right_rubrospinal	 		      
+- 10 -	WM Left_lateral-reticulospinal	 	
+- 11 -	WM Right_lateral-reticulospinal	 	      
+- 12 -	WM Left_spinal-lemniscus-spinothalamic	
+- 13 -	WM Right_spinal-lemniscus-spinothalamic	
+- 14 -	WM Left_spino-olivary	 	            	
+- 15 -	WM Right_spino-olivary	            	
+- 16 -	WM Left_ventrolateral-reticulospinal  
+- 17 -	WM Right_ventrolateral-reticulospinal	
+- 18 -	WM Left_lateral-vestibulospinal	     	
+- 19 -	WM Right_lateral-vestibulospinal	    
+- 20 -	WM Left_ventral-reticulospinal	 		  
+- 21 -	WM Right_ventral-reticulospinal	 	    
+- 22 -	WM Left_ventral-corticospinal	 		    
+- 23 -	WM Right_ventral-corticospinal	 		  
+- 24 -	WM Left_tectospinal	 			            
+- 25 -	WM Right_tectospinal	 			        
+- 26 -	WM Left_medial-reticulospinal	 	    
+- 27 -	WM Right_medial-reticulospinal	 	  
+- 28 -	WM Left_medial-longitudinal-fasciculus	
+- 29 -	WM Right_medial-longitudinal-fasciculus    
+- 30 -	anterior-fissure	 			            
+- 31 -	septum	 					                
+- 32 -	GM Left_medial-ventral-horn	 		  
+- 33 -	GM Left_central-ventral-horn    	
+- 34 -	GM Left_lateral-ventral-horn	    
+- 35 -	GM Right_medial-ventral-horn	 	  
+- 36 -	GM Right_central-ventral-horn	 		
+- 37 -	GM Right_lateral-ventral-horn	    
+- 38 -	GM Left_dorsal-intermediate-zone	
+- 39 -	GM Left_ventral-intermediate-zone	
+- 40 -	GM Right_dorsal-intermediate-zone	
+- 41 -	GM Right_ventral-intermediate-zone
+- 42 -	GM Left_reticular-formation	 		  
+- 43 -	GM Left_dorsomarginal-nucleus	 	  
+- 44 -	GM Left_fasciculus-dorsolateralis	
+- 45 -	GM Right_reticular-formation	 		
+- 46 -	GM Right_dorsomarginal-nucleus	  
+- 47 -	GM Right_fasciculus-dorsolateralis
+- 48 -	central-canal	     			    	    
+- 49 -	CSF contour	 		            	    
 
 **Combined labels**
-- 50    GM_Left_ventral-horn, 32:34
-- 51    GM_Right_ventral-horn, 35:37
-- 52    GM_Left_intermediate-zone, 38:39
-- 53    GM_Right_intermediate-zone, 40:41
-- 54    GM_Left_dorsal-horn, 42:44
-- 55    GM_Right_dorsal-horn, 45:47
-- 56    spinal-cord, 0:48
-- 57    white-matter, 0:31
-- 58    gray-matter, 32:48
-- 59    dorsal-columns, 0:3
-- 60    lateral-funiculi, 4:13
-- 61    ventral-funiculi, 14:29
+- 50  -  GM Left_ventral-horn, 32:34
+- 51  -  GM Right_ventral-horn, 35:37
+- 52  -  GM Left_intermediate-zone, 38:39
+- 53  -  GM Right_intermediate-zone, 40:41
+- 54  -  GM Left_dorsal-horn, 42:44
+- 55  -  GM Right_dorsal-horn, 45:47
+- 56  -  spinal-cord, 0:48
+- 57  -  white-matter, 0:31
+- 58  -  gray-matter, 32:48
+- 59  -  dorsal-columns, 0:3
+- 60  -  lateral-funiculi, 4:13
+- 61  -  ventral-funiculi, 14:29
 
 The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [here](https://github.com/spinalcordtoolbox/template_AMU7T/blob/nl/AMU7Tv3/atlas/Label_intensities_description.txt), and the parcellation can be visualized with this Lookup table in [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt) and [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
 
