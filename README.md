@@ -12,9 +12,9 @@ This data repository contains:
 - `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Lévy et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/)., and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962).__
 - `atlas/AMU7T_label_ID_bin.nii.gz`: Binary masks by ID.
 
-### Labels:  Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
+## Labels:  Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 
-**ID  -  Region**
+## **ID  -  Region**
 - 0	  -  WM Left_fasciculus-gracilis		 
 - 1	  -  WM Right_fasciculus-gracilis	   
 - 2	  -  WM Left_fasciculus-cuneatus		
@@ -81,6 +81,29 @@ This data repository contains:
 - 61  -  ventral-funiculi, 14:29
 
 The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [here](https://github.com/spinalcordtoolbox/template_AMU7T/blob/nl/AMU7Tv3/atlas/Label_intensities_description.txt), and the parcellation can be visualized with this Lookup table in [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt) and [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
+
+## Usage: Registration of AMU7T to Subject space
+For an optimal registration of the AMU7T, it is recommended to work with a WM mask that covers the dorsal horns up to the CSF (see the the animation below).
+
+![WM_seg](https://github.com/spinalcordtoolbox/template_AMU7T/assets/77469192/3051e1c9-1e77-4949-82eb-2ebf73e7ef89)
+
+### Optimal parameters for register AMU7T to subject space
+```
+sct_register_to_template -i image.nii.gz -s image_wm.nii.gz -l landmarks.nii.gz -c t1 -v 1 -s-template-id 4  -t ../template_AMU7T  -param step=1,type=imseg,algo=centermassrot,rot_method=pcahog:step=2,type=seg,algo=bsplinesyn,slicewise=0,metric=MeanSquares,samplStrategy=None,samplPercent=0.2,iter=2,smooth=1,rot_method=pcahog:step=3,type=seg,algo=syn,metric=MeanSquares,shrink=2,dof=Tz_Rz_Sz,slicewise=1,iter=20 -ref subject
+```
+
+### Atlas registration to subject space
+```
+sct_apply_transfo -i template_AMU7T/atlas/AMU7T_50_labels.nii.gz -d image.nii.gz -w warp_template2anat.nii.gz -o labels_AMU7T2anat.nii.gz -x nn
+```
+
+### Other uses with SCT commands 
+```
+sct_warp_template -d image.nii.gz -w warp_template2anat.nii.gz  -t template_AMU7T
+sct_extract_metric -i image.nii.gz -f label\atlas  -method wa -o wa_T1.csv -z 9:32 -perslice 1
+```
+
+
 
 ## Related issues
 [#13](https://github.com/spinalcordtoolbox/PAM50/issues/13) 
