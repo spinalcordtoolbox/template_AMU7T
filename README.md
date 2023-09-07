@@ -81,7 +81,7 @@ Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 - 60    lateral-funiculi, 4:13
 - 61    ventral-funiculi, 14:29
 
-The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [here](https://github.com/spinalcordtoolbox/template_AMU7T/blob/main/atlas/Label_intensities_description.txt), and the parcellation can be visualized with this Lookup table in [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt) and [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
+The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [here](https://github.com/spinalcordtoolbox/template_AMU7T/blob/nl/AMU7Tv3/atlas/Label_intensities_description.txt), and the parcellation can be visualized with this Lookup table in [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt) and [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
 
 ## Related issues
 [#13](https://github.com/spinalcordtoolbox/PAM50/issues/13) 
