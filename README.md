@@ -14,7 +14,7 @@ This data repository contains:
 
 ### Labels:  Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 
-**ID  -  Region						**
+**ID  -  Region**
 - 0	  -  WM Left_fasciculus-gracilis		 
 - 1	  -  WM Right_fasciculus-gracilis	   
 - 2	  -  WM Left_fasciculus-cuneatus		
