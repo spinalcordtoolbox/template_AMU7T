@@ -100,7 +100,7 @@ sct_apply_transfo -i template_AMU7T/atlas/AMU7T_50_labels.nii.gz -d image.nii.gz
 ### Other uses with SCT commands 
 ```
 sct_warp_template -d image.nii.gz -w warp_template2anat.nii.gz  -t template_AMU7T
-sct_extract_metric -i image.nii.gz -f label\atlas  -method wa -o wa_T1.csv -z 9:32 -perslice 1
+sct_extract_metric -i image.nii.gz -f label/atlas  -method wa -o wa_T1.csv -z 2:17 -perslice 1
 ```
 
 
