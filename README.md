@@ -104,6 +104,11 @@ sct_extract_metric -i image.nii.gz -f label/atlas  -method wa -o wa_T1.csv -z 2:
 ```
 
 
+### Python script for registrater AMU7T template to subject space
+```python
+python template_AMU7T/code/AMU7T_registration.py --path_image image.nii.gz --mask_wm image_wm.nii.gz --landmarks landmarks.nii.gz --path_template_AMU7T template_AMU7T/ --path_output OUTPUT
+```
+
 
 ## Related issues
 [#13](https://github.com/spinalcordtoolbox/PAM50/issues/13) 
