@@ -10,7 +10,7 @@ This data repository contains:
 - `template/AMU7T_wm.nii.gz`: Probabilistic white matter mask.
 - `template/AMU7T_sc.nii.gz`: Probabilistic spinal cord mask.
 - `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Lévy et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/)., and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962).__
-- `atlas/AMU7T_label_ID_bin.nii.gz`: Binary masks by ID.
+- `atlas/AMU7T_atlas_ID_bin.nii.gz`: Binary masks by ID.
 
 ## Labels:  Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
 
@@ -102,7 +102,6 @@ sct_apply_transfo -i template_AMU7T/atlas/AMU7T_50_labels.nii.gz -d image.nii.gz
 sct_warp_template -d image.nii.gz -w warp_template2anat.nii.gz  -t template_AMU7T
 sct_extract_metric -i image.nii.gz -f label/atlas  -method wa -o wa_T1.csv -z 2:17 -perslice 1
 ```
-
 
 ### Python script for registrater AMU7T template to subject space
 ```python
