@@ -7,4 +7,5 @@
 4, white matter mask (probabilistic from qT1 template), AMU7T_wm_qt1.nii.gz
 5, gray matter mask (probabilistic from t2s), AMU7T_gm.nii.gz
 6, white matter mask (probabilistic from t2s), AMU7T_wm.nii.gz
-7, spinal cord mask with discrete vertebral levels (from PAM50), PAM50_levels.nii.gz
+7, spinal cord mask with discrete vertebral levels, AMU7T_levels.nii.gz
+
