@@ -2,6 +2,9 @@
 AMU7T : high-resolution multimodal quantitative T1 and T2*-weighted templates with white and gray matter spinal cord and substructures atlas, aligned with the PAM50 space
 ![AMU_7T_template](https://github.com/spinalcordtoolbox/template_AMU7T/assets/77469192/3b5cb4b8-5931-4841-b952-d968f4b4338f)
 
+## Main Dependencies
+[![SCT](https://img.shields.io/badge/SCT-7.0-green)](https://github.com/spinalcordtoolbox/spinalcordtoolbox/releases/tag/7.0)
+
 ## Data
 This data repository contains:
 - `template/AMU26_qt1.nii.gz`: 7T qT1 template from 26 subjects.
@@ -9,110 +12,173 @@ This data repository contains:
 - `template/AMU7T_gm.nii.gz`: Probabilistic gray matter mask.
 - `template/AMU7T_wm.nii.gz`: Probabilistic white matter mask.
 - `template/AMU7T_sc.nii.gz`: Probabilistic spinal cord mask.
-- `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Lévy et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/)., and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962).__
+- `template/AMU7T_levels.nii.gz`: SC mask with discrete vertebral levels.
+- `atlas/AMU7T_50_labels.nii.gz`: Atlas with 50 labels (WM parcels from [Lévy et al., NeuroImage (2015)](https://pubmed.ncbi.nlm.nih.gov/26099457/), and GM parcels derivated from _Hausman, _L. Atlases of the Spinal Cord and Brainstem and the Forebrain. (Thomas, 1962)__
 - `atlas/AMU7T_atlas_ID_bin.nii.gz`: Binary masks by ID.
 
-## Labels:  Multilabel atlas in in `atlas/AMU7T_50_labels.nii.gz` containing:
+### Multilabel atlas containing:
 
-## **ID  -  Region**
-- 0	  -  WM Left_fasciculus-gracilis		 
-- 1	  -  WM Right_fasciculus-gracilis	   
-- 2	  -  WM Left_fasciculus-cuneatus		
-- 3	  -  WM Right_fasciculus-cuneatus	 	
-- 4	  -  WM Left_lateral-corticospinal	
-- 5	  -  WM Right_lateral-corticospinal	
-- 6	  -  WM Left_ventral-spinocerebellar	
-- 7	  -  WM Right_ventral-spinocerebellar
-- 8	  -  WM Left_rubrospinal	 			      
-- 9	  -  WM Right_rubrospinal	 		      
-- 10 -	WM Left_lateral-reticulospinal	 	
-- 11 -	WM Right_lateral-reticulospinal	 	      
-- 12 -	WM Left_spinal-lemniscus-spinothalamic	
-- 13 -	WM Right_spinal-lemniscus-spinothalamic	
-- 14 -	WM Left_spino-olivary	 	            	
-- 15 -	WM Right_spino-olivary	            	
-- 16 -	WM Left_ventrolateral-reticulospinal  
-- 17 -	WM Right_ventrolateral-reticulospinal	
-- 18 -	WM Left_lateral-vestibulospinal	     	
-- 19 -	WM Right_lateral-vestibulospinal	    
-- 20 -	WM Left_ventral-reticulospinal	 		  
-- 21 -	WM Right_ventral-reticulospinal	 	    
-- 22 -	WM Left_ventral-corticospinal	 		    
-- 23 -	WM Right_ventral-corticospinal	 		  
-- 24 -	WM Left_tectospinal	 			            
-- 25 -	WM Right_tectospinal	 			        
-- 26 -	WM Left_medial-reticulospinal	 	    
-- 27 -	WM Right_medial-reticulospinal	 	  
-- 28 -	WM Left_medial-longitudinal-fasciculus	
-- 29 -	WM Right_medial-longitudinal-fasciculus    
-- 30 -	anterior-fissure	 			            
-- 31 -	septum	 					                
-- 32 -	GM Left_medial-ventral-horn	 		  
-- 33 -	GM Left_central-ventral-horn    	
-- 34 -	GM Left_lateral-ventral-horn	    
-- 35 -	GM Right_medial-ventral-horn	 	  
-- 36 -	GM Right_central-ventral-horn	 		
-- 37 -	GM Right_lateral-ventral-horn	    
-- 38 -	GM Left_dorsal-intermediate-zone	
-- 39 -	GM Left_ventral-intermediate-zone	
-- 40 -	GM Right_dorsal-intermediate-zone	
-- 41 -	GM Right_ventral-intermediate-zone
-- 42 -	GM Left_reticular-formation	 		  
-- 43 -	GM Left_dorsomarginal-nucleus	 	  
-- 44 -	GM Left_fasciculus-dorsolateralis	
-- 45 -	GM Right_reticular-formation	 		
-- 46 -	GM Right_dorsomarginal-nucleus	  
-- 47 -	GM Right_fasciculus-dorsolateralis
-- 48 -	central-canal	     			    	    
-- 49 -	CSF contour	 		            	    
+<details>
+  <summary> atlas/ </summary>
+  
+| **ID** | **Region**                               |
+|--------|------------------------------------------|
+| 0      | WM Left_fasciculus-gracilis              |
+| 1      | WM Right_fasciculus-gracilis             |
+| 2      | WM Left_fasciculus-cuneatus              |
+| 3      | WM Right_fasciculus-cuneatus             |
+| 4      | WM Left_lateral-corticospinal            |
+| 5      | WM Right_lateral-corticospinal           |
+| 6      | WM Left_ventral-spinocerebellar          |
+| 7      | WM Right_ventral-spinocerebellar         |
+| 8      | WM Left_rubrospinal                      |
+| 9      | WM Right_rubrospinal                     |
+| 10     | WM Left_lateral-reticulospinal           |
+| 11     | WM Right_lateral-reticulospinal          |
+| 12     | WM Left_spinal-lemniscus-spinothalamic   |
+| 13     | WM Right_spinal-lemniscus-spinothalamic  |
+| 14     | WM Left_spino-olivary                    |
+| 15     | WM Right_spino-olivary                   |
+| 16     | WM Left_ventrolateral-reticulospinal     |
+| 17     | WM Right_ventrolateral-reticulospinal    |
+| 18     | WM Left_lateral-vestibulospinal          |
+| 19     | WM Right_lateral-vestibulospinal         |
+| 20     | WM Left_ventral-reticulospinal           |
+| 21     | WM Right_ventral-reticulospinal          |
+| 22     | WM Left_ventral-corticospinal            |
+| 23     | WM Right_ventral-corticospinal           |
+| 24     | WM Left_tectospinal                      |
+| 25     | WM Right_tectospinal                     |
+| 26     | WM Left_medial-reticulospinal            |
+| 27     | WM Right_medial-reticulospinal           |
+| 28     | WM Left_medial-longitudinal-fasciculus   |
+| 29     | WM Right_medial-longitudinal-fasciculus  |
+| 30     | anterior-fissure                         |
+| 31     | septum                                   |
+| 32     | GM Left_medial-ventral-horn              |
+| 33     | GM Left_central-ventral-horn             |
+| 34     | GM Left_lateral-ventral-horn             |
+| 35     | GM Right_medial-ventral-horn             |
+| 36     | GM Right_central-ventral-horn            |
+| 37     | GM Right_lateral-ventral-horn            |
+| 38     | GM Left_dorsal-intermediate-zone         |
+| 39     | GM Left_ventral-intermediate-zone        |
+| 40     | GM Right_dorsal-intermediate-zone        |
+| 41     | GM Right_ventral-intermediate-zone       |
+| 42     | GM Left_reticular-formation              |
+| 43     | GM Left_dorsomarginal-nucleus            |
+| 44     | GM Left_fasciculus-dorsolateralis        |
+| 45     | GM Right_reticular-formation             |
+| 46     | GM Right_dorsomarginal-nucleus           |
+| 47     | GM Right_fasciculus-dorsolateralis       |
+| 48     | central-canal                            |
+| 49     | CSF contour                              |
 
 **Combined labels**
-- 50  -  GM Left_ventral-horn, 32:34
-- 51  -  GM Right_ventral-horn, 35:37
-- 52  -  GM Left_intermediate-zone, 38:39
-- 53  -  GM Right_intermediate-zone, 40:41
-- 54  -  GM Left_dorsal-horn, 42:44
-- 55  -  GM Right_dorsal-horn, 45:47
-- 56  -  spinal-cord, 0:48
-- 57  -  white-matter, 0:31
-- 58  -  gray-matter, 32:48
-- 59  -  dorsal-columns, 0:3
-- 60  -  lateral-funiculi, 4:13
-- 61  -  ventral-funiculi, 14:29
+| **ID** | **Region**                               |
+|--------|------------------------------------------|
+| 50     | GM Left_ventral-horn, 32:34              |
+| 51     | GM Right_ventral-horn, 35:37             |
+| 52     | GM Left_intermediate-zone, 38:39         |
+| 53     | GM Right_intermediate-zone, 40:41        |
+| 54     | GM Left_dorsal-horn, 42:44               |
+| 55     | GM Right_dorsal-horn, 45:47              |
+| 56     | spinal-cord, 0:48                       |
+| 57     | white-matter, 0:31                      |
+| 58     | gray-matter, 32:48                      |
+| 59     | dorsal-columns, 0:3                     |
+| 60     | lateral-funiculi, 4:13                  |
+| 61     | ventral-funiculi, 14:29                 |
 
-The intensities of each label in `atlas/AMU7T_50_labels.nii.gz` are detailed [here](https://github.com/spinalcordtoolbox/template_AMU7T/blob/nl/AMU7Tv3/atlas/Label_intensities_description.txt), and the parcellation can be visualized with this Lookup table in [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt) and [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
 
-## Usage: Registration of AMU7T to Subject space
-For an optimal registration of the AMU7T, it is recommended to work with a WM mask that covers the dorsal horns up to the CSF (see the the animation below).
+</details>
 
-![WM_seg](https://github.com/spinalcordtoolbox/template_AMU7T/assets/77469192/3051e1c9-1e77-4949-82eb-2ebf73e7ef89)
+#### Note :
+- List of clases on `atlas/AMU7T_50_labels.nii.gz` is detailed [here](https://github.com/spinalcordtoolbox/template_AMU7T/blob/main/atlas/Label_intensities_description.txt), 
+- For a good visualization of parcellations use these LookUp Tables : [FSLeyes](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033959/AMU7T_parc.txt), [ITK-SNAP](https://github.com/spinalcordtoolbox/template_AMU7T/files/12033957/AMU7T_parc_itk.txt)
 
-### Optimal parameters for register AMU7T to subject space
+
+## Usage: 
+### 1. Automatic segmentations and vertebral labeling using `sct_deepseg`  
+
+**SC segmentation: [`spinalcord`](https://github.com/sct-pipeline/contrast-agnostic-softseg-spinalcord) model**
 ```
-sct_register_to_template -i image.nii.gz -s image_wm.nii.gz -l landmarks.nii.gz -c t1 -v 1 -s-template-id 4  -t ../template_AMU7T  -param step=1,type=imseg,algo=centermassrot,rot_method=pcahog:step=2,type=seg,algo=bsplinesyn,slicewise=0,metric=MeanSquares,samplStrategy=None,samplPercent=0.2,iter=2,smooth=1,rot_method=pcahog:step=3,type=seg,algo=syn,metric=MeanSquares,shrink=2,dof=Tz_Rz_Sz,slicewise=1,iter=20 -ref subject
+sct_deepseg spinalcord -install
 ```
-
-### Atlas registration to subject space
 ```
-sct_apply_transfo -i template_AMU7T/atlas/AMU7T_50_labels.nii.gz -d image.nii.gz -w warp_template2anat.nii.gz -o labels_AMU7T2anat.nii.gz -x nn
-```
-
-### Other uses with SCT commands 
-```
-sct_warp_template -d image.nii.gz -w warp_template2anat.nii.gz  -t template_AMU7T
-sct_extract_metric -i image.nii.gz -f label/atlas  -method wa -o wa_T1.csv -z 2:17 -perslice 1
+sct_deepseg spinalcord -i IMAGE.nii.gz  -o IMAGE_sc_seg.nii.gz
 ```
 
-### Python script for registrater AMU7T template to subject space
-```python
-python template_AMU7T/code/AMU7T_registration.py --path_image image.nii.gz --mask_wm image_wm.nii.gz --landmarks landmarks.nii.gz --path_template_AMU7T template_AMU7T/ --path_output OUTPUT
+**SC segmentation: [`graymatter`](https://github.com/ivadomed/model-gm-contrast-region-agnostic) model**
+```
+sct_deepseg graymatter -install
+```
+```
+sct_deepseg graymatter -i IMAGE.nii.gz  -o IMAGE_gm_seg.nii.gz 
+```
+**WM segmentation:**
+```
+sct_maths -i IMAGE_sc_seg.nii.gz -sub IMAGE_gm_seg.nii.gz  -o IMAGE_wm_seg.nii.gz
+```
+:warning: **Warning:** Manually correct WM segmentation if necessary.
+
+**Vertebral labeling: [`totalspineseg`](https://github.com/neuropoly/totalspineseg) model**
+```
+sct_deepseg totalspineseg -install
+```
+```
+sct_deepseg totalspineseg -i IMAGE.nii.gz  -step 1 -o  IMAGE_total.nii.gz
 ```
 
+### 2. AMU7T Registration 
+#### 2.1 Registration of Template to Subject space
+```console
+sct_register_to_template
+        -i IMAGE.nii.gz
+        -s IMAGE_wm_seg.nii.gz
+        -ldisc IMAGE_total_step_1_levels.nii.gz
+        -t $template_AMU7T_path
+        -c t1
+        -s-template-id 4
+        -ref subject 
+        -param step=0,type=label,algo=syn,rot_method=pca,dof=Tx_Ty_Tz_Rz:
+              step=1,type=imseg,algo=centermassrot,rot_method=pcahog:
+              step=2,type=seg,algo=bsplinesyn,slicewise=0,metric=MeanSquares,samplStrategy=None,samplPercent=0.2,iter=3,smooth=1,rot_method=pca:
+              step=3,type=seg,algo=syn,metric=MeanSquares,shrink=2,dof=Tz_Rz_Sz,slicewise=1,iter=20
+        -ofolder AMU7T_2_IMAGE
+```
 
-## Related issues
-[#13](https://github.com/spinalcordtoolbox/PAM50/issues/13) 
-[#4](https://github.com/spinalcordtoolbox/template_AMU7T/issues/4)
-[#PR14](https://github.com/spinalcordtoolbox/PAM50/pull/14)
+#### 2.2. Registration of Atlas
+
+**Warp template and all atlases to Subject space**
+```console
+sct_warp_template
+        -d IMAGE.nii.gz
+        -w AMU7T_2_IMAGE/warp_template2anat.nii.gz
+        -t $template_AMU7T_path
+        -ofolder AMU7T_2_IMAGE
+```
+
+**Warp multilabel atlas**
+```console
+sct_apply_transfo
+        -i $template_AMU7T_path/atlas/atlas/AMU7T_50_labels.nii.gz
+        -d IMAGE.nii.gz
+        -w AMU7T_2_IMAGE/warp_template2anat.nii.gz
+        -x nn
+        -o AMU7T_2_IMAGE/AMU7T_50_labels_2_IMAGE.nii.gz
+```
+
+#### 2.3 Extract quantitative metrics
+```console
+sct_extract_metric
+        -i IMAGE.nii.gz
+        -f AMU7T_2_IMAGE/label/atlas
+        -method wa
+        -z 2:17
+        -perslice 1
+        -o AMU7T_2_IMAGE/IMAGE_wa_T1.csv
+```
 
 ## How to cite
 Le Troter, A., Laines Medina, N., Mchinda, S., Cohen-Adad, J., & Callot, V. (June 2023). [AMU7T : a 3D qT1 and T2*w high-resolution in vivo template with refined white and gray matter parcellation dedicated to 7T spinal cord MR analyses](https://github.com/spinalcordtoolbox/template_AMU7T/files/12031127/AMU7T.a.3D.qT1.and.T2s.w.high-resolution.in.vivo.template.with.refined.white.and.gray.matter.parcellation.dedicated.to.7T.spinal.cord.MR.analyses.pdf) [Oral presentation - p. 0569]. ISMRM & ISMRT annual Meeting & Exhibition, Toronto, ON, Canada.
