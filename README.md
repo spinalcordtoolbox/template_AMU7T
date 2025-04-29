@@ -162,7 +162,7 @@ sct_warp_template
 **Warp multilabel atlas**
 ```console
 sct_apply_transfo
-        -i $template_AMU7T_path/atlas/atlas/AMU7T_50_labels.nii.gz
+        -i $template_AMU7T_path/atlas/AMU7T_50_labels.nii.gz
         -d IMAGE.nii.gz
         -w AMU7T_2_IMAGE/warp_template2anat.nii.gz
         -x nn
