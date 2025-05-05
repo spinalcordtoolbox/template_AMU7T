@@ -109,7 +109,7 @@ sct_deepseg spinalcord -install
 sct_deepseg spinalcord -i IMAGE.nii.gz  -o IMAGE_sc_seg.nii.gz
 ```
 
-**SC segmentation: [`graymatter`](https://github.com/ivadomed/model-gm-contrast-region-agnostic) model**
+**GM segmentation: [`graymatter`](https://github.com/ivadomed/model-gm-contrast-region-agnostic) model**
 ```
 sct_deepseg graymatter -install
 ```
